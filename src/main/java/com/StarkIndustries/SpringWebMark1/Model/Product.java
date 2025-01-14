@@ -1,7 +1,11 @@
 package com.StarkIndustries.SpringWebMark1.Model;
 
-public class Product {
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Entity
+public class Product {
+    @Id
     private int productId;
     private String name;
     private String company;
